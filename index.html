@@ -171,13 +171,3 @@
     </script>
 </body>
 </html>
-<!-- Add this script at the end of pay.html body -->
-<script>
-    // Get cart total from URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const cartTotal = urlParams.get('total') || 0;
-    
-    // Set amount input value
-    document.getElementById('amount').value = cartTotal;
-    document.getElementById('amount').readOnly = true;
-</script>
